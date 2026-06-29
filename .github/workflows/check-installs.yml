@@ -26,7 +26,7 @@ jobs:
   check-installs-actions-runner-ubuntu:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/actions/actions-runner:ubuntu24/202622.220
+      image: ghcr.io/actions/runner-images:ubuntu24/202622.220
     steps:
       - uses: actions/checkout@v4
 
@@ -36,7 +36,7 @@ jobs:
   check-installs-actions-runner-ubuntu-latest:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/actions/actions-runner:ubuntu24
+      image: ghcr.io/actions/runner-images:ubuntu24
     steps:
       - uses: actions/checkout@v4
 

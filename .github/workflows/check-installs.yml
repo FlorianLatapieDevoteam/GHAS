@@ -1,0 +1,14 @@
+name: Check Installs
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  check-installs:
+    runs-on: code-scanning
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run check-installs.sh
+        run: bash check-installs.sh

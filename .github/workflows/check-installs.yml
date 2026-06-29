@@ -12,3 +12,11 @@ jobs:
 
       - name: Run check-installs.sh
         run: bash check-installs.sh
+
+  check-installs-tag:
+    runs-on: code-scanning
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run check-installs.sh
+        run: bash check-installs.sh

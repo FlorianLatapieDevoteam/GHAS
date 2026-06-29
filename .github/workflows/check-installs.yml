@@ -22,19 +22,3 @@ jobs:
 
       - name: Run check-installs.sh
         run: bash check-installs.sh
-
-  check-installs-code-scanning:
-    runs-on: code-scanning
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run check-installs.sh
-        run: bash check-installs.sh
-
-  check-installs-codeql:
-    runs-on: codeql
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Run check-installs.sh
-        run: bash check-installs.sh

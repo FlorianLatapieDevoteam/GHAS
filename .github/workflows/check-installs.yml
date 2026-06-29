@@ -13,6 +13,14 @@ jobs:
       - name: Run check-installs.sh
         run: bash check-installs.sh
 
+  check-installs-actions-runner:
+    runs-on: ghcr.io/actions/actions-runner:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run check-installs.sh
+        run: bash check-installs.sh
+
   check-installs-code-scanning:
     runs-on: code-scanning
     steps:
